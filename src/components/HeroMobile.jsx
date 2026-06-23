@@ -17,7 +17,7 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                 Software Engineer & Creative
             </p>
 
-            <div className="absolute top-20 w-full flex flex-col items-center z-10">
+            <div className="absolute top-20 w-full flex flex-col items-center z-20 pointer-events-none">
                 <h1 className="w-full text-[28vw] font-black tracking-tighter leading-none text-center uppercase mt-4 text-cyan-950 flex flex-col items-center">
                     <motion.span style={{ x: xTop }} className="block">
                         REVA
@@ -63,7 +63,7 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                     >Fullstack Dev</motion.span>
                 </motion.div>
 
-                <div className="w-215">
+                <div className="w-215 flex justify-center z-10">
                     <motion.div
                         style={{ y: yImage }}
                         className="w-full -ml-5 -mt-60"
