@@ -18,7 +18,7 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
             </p>
 
             <div className="absolute top-20 w-full flex flex-col items-center z-20 pointer-events-none">
-                <h1 className="w-full text-[28vw] font-black tracking-tighter leading-none text-center uppercase mt-4 text-cyan-950 flex flex-col items-center">
+                <h1 className="w-full text-[24vw] font-black tracking-tighter leading-[0.85] text-center uppercase mt-4 text-cyan-950 flex flex-col items-center">
                     <motion.span style={{ x: xTop }} className="block">
                         REVA
                     </motion.span>
@@ -63,15 +63,15 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                     >Fullstack Dev</motion.span>
                 </motion.div>
 
-                <div className="w-215 flex justify-center z-10">
+                <div className="w-full flex justify-center z-10">
                     <motion.div
                         style={{ y: yImage }}
-                        className="w-full mr-5 -mt-60"
+                        className="translate-y-20 mr-5 scale-225"
                     >
                         <img
                             src="./assets/mypicture3.png"
                             alt="Reva"
-                            className="w-full h-auto grayscale object-contain block drop-shadow-2xl"
+                            className="w-full h-auto object-contain grayscale"
                         />
                     </motion.div>
                 </div>
