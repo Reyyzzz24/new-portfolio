@@ -60,15 +60,15 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                     >Fullstack Dev</motion.span>
                 </motion.div>
 
-                <div className="w-full flex justify-center z-10">
+                <div className="w-215">
                     <motion.div
                         style={{ y: yImage }}
-                        className="translate-y-20 mr-5 scale-225"
+                        className="w-full -ml-5 -mt-60"
                     >
                         <img
                             src="./assets/mypicture3.png"
                             alt="Reva"
-                            className="w-full h-auto object-contain grayscale"
+                            className="w-full h-auto grayscale object-contain block drop-shadow-2xl"
                         />
                     </motion.div>
                 </div>
