@@ -67,15 +67,11 @@ const About = () => {
     const imgScale = useTransform(imgScroll, [0, 1], [0.95, 1]);
 
     return (
-        /* BACKGROUND LUAR: PUTIH */
         <section id="about" className="bg-white min-h-screen w-full flex flex-col select-none">
-            
-            {/* FRAME ROUNDED: CYAN-950 */}
             <div className="max-w-7xl mx-auto w-full bg-cyan-950 rounded-[48px] overflow-hidden p-8 md:p-16 lg:p-24">
-                
+
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
 
-                    {/* Kolom Kiri: Teks & Statistik */}
                     <div className="flex flex-col justify-between h-full lg:col-span-7">
                         <div className="w-full">
                             <motion.h2
@@ -88,24 +84,26 @@ const About = () => {
 
                             <div className="space-y-6">
                                 <AnimatedParagraph>
-                                    I am a versatile Fullstack Developer and Product Designer based in Bogor,
-                                    driven by a passion for transforming complex data into intuitive, high-performance
-                                    digital experiences. My work bridges the gap between aesthetic design and functional
-                                    engineering.
+                                    I am a passionate Fullstack Developer and Machine Learning enthusiast based in Bogor,
+                                    driven by the mission to build intelligent, high-performance digital systems.
+                                    I specialize in bridging the gap between robust backend engineering and intuitive
+                                    frontend interfaces.
                                 </AnimatedParagraph>
                                 <AnimatedParagraph>
-                                    My technical expertise spans beyond traditional web development; I integrate
-                                    Machine Learning into my projects to build intelligent, data-driven systems
-                                    that solve real-world problems.
+                                    My technical approach integrates Machine Learning to create data-driven solutions
+                                    that address complex real-world challenges. Whether it's optimizing system
+                                    architecture or implementing predictive models, I focus on delivering scalable
+                                    and efficient results.
                                 </AnimatedParagraph>
                                 <AnimatedParagraph>
-                                    Beyond writing code, I am an avid Video Editor. This unique creative skill allows
-                                    me to maintain a high standard of visual storytelling dan UX/UI refinement.
+                                    Beyond the code, I am a dedicated Video Editor. This creative edge allows me to
+                                    bring a cinematic level of detail to my projects, ensuring that every user
+                                    experience is not just functional, but also visually compelling and narratively
+                                    engaging.
                                 </AnimatedParagraph>
                             </div>
                         </div>
 
-                        {/* Statistik (Border disesuaikan dengan background gelap) */}
                         <div className="w-full flex mt-12 pt-8">
                             <div className="flex flex-row items-center gap-8 md:gap-14">
                                 <StatItem number={10} suffix="+" label="Projects" />
@@ -115,8 +113,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    {/* Kolom Kanan: Foto Profil Elegan */}
-                    <motion.div
+                    <motion.divs
                         ref={imgRef}
                         style={{ opacity: imgOpacity, scale: imgScale }}
                         className="relative w-full h-[400px] lg:h-[550px] rounded-[32px] overflow-hidden bg-cyan-900/50 lg:col-span-5"
