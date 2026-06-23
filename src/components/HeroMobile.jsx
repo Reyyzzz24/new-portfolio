@@ -13,13 +13,12 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
 
     return (
         <div className="md:hidden relative w-full h-screen overflow-hidden flex flex-col pt-10">
-            {/* Subtitle disamakan dengan Desktop */}
             <p className="text-[10px] uppercase tracking-[0.3em] text-cyan-700/60 font-semibold text-center">
                 Software Engineer & Creative
             </p>
 
             <div className="absolute top-20 w-full flex flex-col items-center z-10">
-                <h1 className="w-full text-[28vw] font-black tracking-tighter leading-[0.8] text-center uppercase mt-4 text-cyan-950 flex flex-col items-center">
+                <h1 className="w-full text-[28vw] font-black tracking-tighter leading-none text-center uppercase mt-4 text-cyan-950 flex flex-col items-center">
                     <motion.span style={{ x: xTop }} className="block">
                         REVA
                     </motion.span>
