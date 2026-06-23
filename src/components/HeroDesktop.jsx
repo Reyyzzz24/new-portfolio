@@ -2,12 +2,10 @@ import { motion } from "framer-motion";
 
 const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
   <div className="hidden md:flex relative flex-1 flex-col items-center justify-center pb-20">
-    {/* Subtitle */}
     <p className="text-[10px] uppercase tracking-[0.3em] text-cyan-700/60 font-semibold">
       Software Engineer & Creative
     </p>
 
-    {/* Typography dengan Animasi Slide */}
     <h1 className="w-full text-[12vw] font-bold tracking-tighter leading-[0.9] text-cyan-950 uppercase mt-4 overflow-hidden">
       <motion.div
         style={{ x: xTop }}
@@ -19,7 +17,7 @@ const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
         <span>REVA</span>
         <span
           className="text-transparent"
-          style={{ WebkitTextStroke: "1px #0891b2" }}
+          style={{ WebkitTextStroke: "2px #0891b2" }}
         >
           YULIAN
         </span>
@@ -41,11 +39,6 @@ const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
       initial={{ y: "110vh" }}
       animate={{ y: "0px" }}
       transition={{ duration: 1, delay: 0.5 }}
-      /* 
-         -top-[10%] adalah default untuk mobile
-         md:-top-[5%] khusus untuk tablet (lebih ke atas)
-         lg:-top-[10%] khusus untuk desktop (kembali ke posisi semula)
-      */
       className="absolute -top-[10%] md:top-[20%] lg:-top-[10%] left-1/2 -translate-x-1/2 w-[80%] md:w-[800px] lg:w-[1000px] z-10 pointer-events-none"
     >
       <img
@@ -55,7 +48,6 @@ const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
       />
     </motion.div>
 
-    {/* Modern Badges dengan Animasi Fade In & Move Up */}
     <motion.div
       style={{ y: yBadge }}
       initial={{ opacity: 0, y: "150vh" }}
