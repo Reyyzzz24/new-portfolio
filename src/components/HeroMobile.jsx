@@ -66,7 +66,7 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                 <div className="w-215 flex justify-center z-10">
                     <motion.div
                         style={{ y: yImage }}
-                        className="w-full -ml-5 -mt-60"
+                        className="w-full mr-5 -mt-60"
                     >
                         <img
                             src="./assets/mypicture3.png"
