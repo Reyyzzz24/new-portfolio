@@ -17,7 +17,7 @@ const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
         <span>REVA</span>
         <span
           className="text-transparent"
-          style={{ WebkitTextStroke: "2px #0891b2" }}
+          style={{ WebkitTextStroke: "1px #0891b2" }}
         >
           YULIAN
         </span>
