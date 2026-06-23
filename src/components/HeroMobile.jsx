@@ -18,23 +18,14 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
             </p>
 
             <div className="absolute top-20 w-full flex flex-col items-center z-20 pointer-events-none">
-                <h1 className="w-full text-[24vw] font-black tracking-tighter leading-[0.85] text-center uppercase mt-4 text-cyan-950 flex flex-col items-center">
+                <h1 className="w-full text-[24vw] font-black tracking-tight leading-[0.85] text-center uppercase mt-4 text-cyan-950 flex flex-col items-center">
                     <motion.span style={{ x: xTop }} className="block">
                         REVA
                     </motion.span>
 
                     <motion.span
-                        style={{
-                            x: xBottom,
-                            color: "transparent",
-                            textShadow: `
-                            -1px -1px 0 #0891b2,
-                            1px -1px 0 #0891b2,
-                            -1px  1px 0 #0891b2,
-                            1px  1px 0 #0891b2
-                        `
-                        }}
-                        className="block will-change-transform"
+                        style={{ x: xBottom }}
+                        className="block will-change-transform text-[#0891b2]"
                     >
                         YULIAN
                     </motion.span>

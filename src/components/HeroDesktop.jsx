@@ -15,10 +15,7 @@ const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
         className="flex justify-center gap-[2vw]"
       >
         <span>REVA</span>
-        <span
-          className="text-transparent"
-          style={{ WebkitTextStroke: "1px #0891b2" }}
-        >
+        <span className="text-[#0891b2]">
           YULIAN
         </span>
       </motion.div>
