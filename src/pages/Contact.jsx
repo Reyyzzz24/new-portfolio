@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { User, Mail, ChevronDown, ArrowRight, MapPin, Smartphone } from 'lucide-react';
 
 const Contact = () => {
-    // Pengaturan animasi agar muncul halus saat scroll
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -27,7 +26,6 @@ const Contact = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="max-w-7xl mx-auto w-full"
             >
-                {/* 1. Header Section */}
                 <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-start mb-16 md:mb-20">
                     <div className="lg:col-span-6">
                         <h2 className="text-4xl md:text-5xl lg:text-5xl font-medium tracking-tight text-gray-900 leading-[1.15]">
@@ -37,20 +35,15 @@ const Contact = () => {
                     </div>
                 </motion.div>
 
-                {/* 2. Content Grid Section */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
 
-                    {/* Form Box */}
                     <motion.div variants={itemVariants} className="lg:col-span-7 w-full">
                         <form action="https://formspree.io/f/xrbgknkv" method="POST" className="w-full space-y-5">
 
-                            {/* Field Nama */}
                             <InputField label="Full Name" icon={<User className="w-4 h-4" />} placeholder="Enter your full name..." name="name" type="text" />
 
-                            {/* Field Email */}
                             <InputField label="Email Address" icon={<Mail className="w-4 h-4" />} placeholder="Enter your email address..." name="email" type="email" />
 
-                            {/* Field Telepon */}
                             <div className="space-y-1.5">
                                 <label className="block text-xs font-bold text-gray-700 ml-1">Phone Number</label>
                                 <div className="relative flex items-center">
@@ -62,7 +55,6 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            {/* Field Pesan */}
                             <div className="space-y-1.5">
                                 <label className="block text-xs font-bold text-gray-700 ml-1">Message</label>
                                 <div className="relative">
@@ -79,14 +71,12 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            {/* Submit Button */}
                             <button type="submit" className="inline-flex items-center gap-2 bg-black hover:bg-gray-700 text-white text-xs font-bold tracking-wide py-3 px-8 rounded-full active:scale-[0.98] transition-all duration-300 shadow-md">
                                 Let's Talk <ArrowRight className="w-3.5 h-3.5" />
                             </button>
                         </form>
                     </motion.div>
 
-                    {/* Info Detail */}
                     <motion.div variants={itemVariants} className="lg:col-span-5 space-y-8 lg:pt-4 lg:pl-6">
                         <InfoItem icon={<MapPin />} title="Location Base" desc="Caringin, Bogor Regency, West Java, Indonesia 16730" />
                         <InfoItem icon={<Smartphone />} title="Direct Contact" desc="+62 858-8597-8036" href="tel:+6285885978036" />
@@ -98,7 +88,6 @@ const Contact = () => {
     );
 };
 
-// Komponen Pembantu (Agar kode lebih rapi)
 const InputField = ({ label, icon, placeholder, name, type }) => (
     <div className="space-y-1.5">
         <label className="block text-xs font-bold text-gray-700 ml-1">{label}</label>

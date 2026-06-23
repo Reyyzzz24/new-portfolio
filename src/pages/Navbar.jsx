@@ -8,11 +8,10 @@ const Navbar = () => {
         "Home", "About", "Experience", "Projects", "Skills", "Certificates", "Contact",
     ];
 
-    // Fungsi untuk download file
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/assets/resume/resume-en&id.pdf'; // Path file di folder public
-        link.setAttribute('download', 'Resume_Reva_Yulian_Satria.pdf'); // Nama file saat didownload
+        link.href = '/assets/resume/resume.pdf';
+        link.setAttribute('download', 'Resume_Reva_Yulian_Satria.pdf');
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -20,7 +19,6 @@ const Navbar = () => {
 
     return (
         <>
-            {/* Desktop */}
             <nav className="hidden lg:grid grid-cols-3 items-center w-full">
                 <div className="flex items-center">
                     <div className="w-9 h-9 rounded-full bg-cyan-950 text-white flex items-center justify-center font-bold text-lg">
@@ -53,7 +51,6 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            {/* Mobile */}
             <nav className="flex lg:hidden items-center justify-between w-full px-6 py-4">
                 <span className="text-lg font-bold text-slate-900">RY</span>
                 <button

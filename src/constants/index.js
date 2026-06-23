@@ -257,7 +257,7 @@ export const experiences = [
   {
     title: "Data Entry Operator",
     job: "IIMI Image Management Pvt. Ltd.",
-    date: "15 March 2025 - Present",
+    date: "15 March 2025 - 14 October 2025",
     contents: [
       "Executing high-volume data entry operations with exceptional accuracy, ensuring seamless digital transformation and data accessibility.",
       "Conducting rigorous data quality control (QC) and validation processes to identify discrepancies, maintaining the highest standards of data integrity and consistency for enterprise-level projects.",

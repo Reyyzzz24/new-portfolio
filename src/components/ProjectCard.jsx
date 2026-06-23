@@ -35,13 +35,11 @@ const Project = ({
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >
-        {/* 1. KONTEN ATAS: INFO UTAMA & ACTION */}
         <div className="relative z-10 flex flex-col w-full">
           <div className="flex items-start justify-between gap-4 w-full mb-3">
             <h3 className="text-xl md:text-2xl font-medium tracking-tight text-gray-900 transition-colors duration-300 group-hover:text-blue-600">
               {title}
             </h3>
-            {/* Tombol Panah Minimalis mengarah ke Kanan Atas */}
             <button
               onClick={() => setIsHidden(true)}
               className="p-2 bg-white border border-gray-100 rounded-full text-gray-400 group-hover:text-gray-900 group-hover:border-gray-300 group-hover:bg-gray-50 transition-all duration-300 shrink-0 shadow-sm active:scale-95"
@@ -56,7 +54,6 @@ const Project = ({
           </p>
         </div>
 
-        {/* 2. KONTEN BAWAH: TAG LIST PIL BULAT */}
         <div className="relative z-10 flex flex-wrap items-center gap-1.5 w-full pt-2 group-hover:border-gray-200/80 transition-colors duration-500">
           {tags.map((tag) => (
             <span
@@ -69,7 +66,6 @@ const Project = ({
         </div>
       </div>
 
-      {/* Modal Details */}
       {isHidden && (
         <ProjectDetails
           title={title}
