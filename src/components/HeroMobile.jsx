@@ -23,7 +23,7 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                     w-full
                     text-[27vw]
                     font-extrabold
-                    tracking-tighter
+                    tracking-normal
                     leading-[0.85]
                     text-center
                     uppercase
