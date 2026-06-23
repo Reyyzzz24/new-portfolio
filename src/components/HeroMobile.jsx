@@ -21,10 +21,10 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                 <h1
                     className="
                     w-full
-                    text-[20vw]
-                    font-black
+                    text-[27vw]
+                    font-extrabold
                     tracking-tighter
-                    leading-[0.75]
+                    leading-[0.85]
                     text-center
                     uppercase
                     mt-4
