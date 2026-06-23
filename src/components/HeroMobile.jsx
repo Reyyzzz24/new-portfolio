@@ -26,9 +26,11 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                     <motion.span
                         style={{
                             x: xBottom,
-                            WebkitTextStroke: "1px #0891b2",
-                            color: "transparent"
+                            WebkitTextStrokeWidth: "1px",
+                            WebkitTextStrokeColor: "#0891b2",
+                            color: "transparent",
                         }}
+                        className="block will-change-transform"
                     >
                         YULIAN
                     </motion.span>
