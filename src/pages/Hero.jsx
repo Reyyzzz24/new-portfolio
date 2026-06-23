@@ -18,7 +18,6 @@ const Hero = () => {
 
     return (
         <section ref={targetRef} className="relative min-h-screen bg-white overflow-hidden font-sans select-none">
-            {/* Grid yang lebih halus dan minimalis */}
             <div className="absolute inset-0 pointer-events-none" style={{
                 backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px)`,
                 backgroundSize: "50px 50px",

@@ -113,7 +113,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <motion.divs
+                    <motion.div
                         ref={imgRef}
                         style={{ opacity: imgOpacity, scale: imgScale }}
                         className="relative w-full h-[400px] lg:h-[550px] rounded-[32px] overflow-hidden bg-cyan-900/50 lg:col-span-5"

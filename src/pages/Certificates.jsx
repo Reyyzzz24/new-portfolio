@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { myCertificates } from '../constants';
 
 const Certificates = () => {
-  // Varian untuk efek "pop-up"
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -49,7 +48,6 @@ const Certificates = () => {
               variants={itemVariants}
               className="group relative bg-gray-50/50 rounded-2xl overflow-hidden border border-gray-200/80 hover:border-cyan-600 transition-all duration-300 h-full flex flex-col justify-between"
             >
-              {/* Area Gambar Sertifikat */}
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-gray-100 border-b border-gray-100">
                 <img
                   src={cert.imageUrl}
@@ -64,7 +62,6 @@ const Certificates = () => {
                 </div>
               </div>
 
-              {/* Area Informasi Detail */}
               <div className="p-4 flex items-center justify-between gap-3 bg-white w-full flex-grow">
                 <div className="flex-1 min-w-0">
                   <h3 className="text-sm font-bold text-gray-900 truncate group-hover:text-cyan-600 transition-colors duration-300">

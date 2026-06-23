@@ -18,7 +18,6 @@ const ProjectDetails = ({
         exit={{ opacity: 0, scale: 0.95 }}
         transition={{ duration: 0.3 }}
       >
-        {/* Tombol Close tetap absolute di luar konten scroll */}
         <button
           onClick={closeModal}
           className="absolute z-20 p-2 transition-colors rounded-full top-4 right-4 bg-white/80 text-gray-700 hover:bg-gray-100 backdrop-blur-sm shadow-sm"
@@ -28,13 +27,11 @@ const ProjectDetails = ({
           </svg>
         </button>
 
-        {/* Header Gambar (Tetap di atas) */}
         <div className="relative h-48 flex-shrink-0 overflow-hidden bg-gray-100 rounded-t-3xl">
           <img src={image} alt={title} className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-gradient-to-t from-white via-white/20 to-transparent" />
         </div>
 
-        {/* Konten Scrollable */}
         <div className="p-8 overflow-y-auto">
           <h5 className="text-2xl font-semibold tracking-tight text-gray-900">{title}</h5>
 
@@ -48,7 +45,6 @@ const ProjectDetails = ({
           </div>
         </div>
 
-        {/* Footer (Tetap di bawah) */}
         <div className="p-8 pt-0 border-t border-gray-100 flex-shrink-0">
           <div className="flex items-center justify-between pt-8">
             <div className="flex gap-2">

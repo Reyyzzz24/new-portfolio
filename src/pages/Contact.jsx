@@ -51,7 +51,7 @@ const Contact = () => {
                                         <span className="text-base leading-none">🇮🇩</span>
                                         <ChevronDown className="w-3 h-3 text-gray-400 stroke-[2.5]" />
                                     </div>
-                                    <input type="tel" name="phone" placeholder="+62 858-8597-8036" className="w-full pl-20 pr-4 py-3 rounded-full bg-white border border-gray-200 focus:border-blue-600 focus:ring-4 focus:ring-blue-600/5 outline-none transition-all duration-300 text-sm text-gray-900" />
+                                    <input type="tel" name="phone" placeholder="+62 858-8597-8036" className="w-full pl-20 pr-4 py-3 rounded-full bg-white border border-gray-200 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-600/5 outline-none transition-all duration-300 text-sm text-gray-900" />
                                 </div>
                             </div>
 
@@ -63,7 +63,7 @@ const Contact = () => {
                                         rows={4}
                                         placeholder="Enter your main text here..."
                                         required
-                                        className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:border-blue-600 focus:ring-4 focus:ring-blue-600/5 outline-none transition-all duration-300 resize-none text-sm text-gray-900 placeholder-gray-400"
+                                        className="w-full p-4 rounded-2xl bg-white border border-gray-200 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-600/5 outline-none transition-all duration-300 resize-none text-sm text-gray-900 placeholder-gray-400"
                                     ></textarea>
                                     <span className="absolute bottom-3 left-4 text-[10px] font-medium text-gray-300">
                                         300/300
@@ -93,7 +93,7 @@ const InputField = ({ label, icon, placeholder, name, type }) => (
         <label className="block text-xs font-bold text-gray-700 ml-1">{label}</label>
         <div className="relative flex items-center">
             <span className="absolute left-4 text-gray-400">{icon}</span>
-            <input type={type} name={name} placeholder={placeholder} required className="w-full pl-11 pr-4 py-3 rounded-full bg-white border border-gray-200 focus:border-blue-600 focus:ring-4 focus:ring-blue-600/5 outline-none transition-all duration-300 text-sm text-gray-900" />
+            <input type={type} name={name} placeholder={placeholder} required className="w-full pl-11 pr-4 py-3 rounded-full bg-white border border-gray-200 focus:border-cyan-600 focus:ring-4 focus:ring-cyan-600/5 outline-none transition-all duration-300 text-sm text-gray-900" />
         </div>
     </div>
 );
@@ -104,7 +104,7 @@ const InfoItem = ({ icon, title, desc, href }) => (
         <div>
             <h4 className="text-base font-bold text-gray-900">{title}</h4>
             {href ? (
-                <a href={href} className="text-gray-500 text-sm mt-1.5 block hover:text-blue-600 transition-colors">{desc}</a>
+                <a href={href} className="text-gray-500 text-sm mt-1.5 block hover:text-cyan-600 transition-colors">{desc}</a>
             ) : (
                 <p className="text-gray-500 text-sm mt-1.5 leading-relaxed">{desc}</p>
             )}

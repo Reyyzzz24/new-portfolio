@@ -31,7 +31,7 @@ const Project = ({
   return (
     <>
       <div
-        className={`group relative flex flex-col justify-between bg-[#fbfbfb] border border-gray-100 rounded-[24px] hover:bg-white hover:border-gray-200 transition-all duration-500 h-full p-6 min-h-[200px] md:min-h-[220px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.03)] ${getBentoClasses(index)}`}
+        className={`group relative flex flex-col justify-between bg-[#fbfbfb] border border-gray-200 rounded-[24px] hover:bg-white hover:border-cyan-600 transition-all duration-500 h-full p-6 min-h-[200px] md:min-h-[220px] overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.01)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.03)] ${getBentoClasses(index)}`}
         onMouseEnter={() => setPreview(image)}
         onMouseLeave={() => setPreview(null)}
       >
