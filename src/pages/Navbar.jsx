@@ -52,7 +52,7 @@ const Navbar = () => {
             </nav>
 
             <nav className="flex lg:hidden items-center justify-between w-full px-6 py-4">
-                <span className="text-lg font-bold text-slate-900">RY</span>
+                <span className="text-3xl font-bold text-slate-900">RY</span>
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     className="w-10 h-10 rounded-full border border-slate-300 bg-white/70 backdrop-blur-xl flex items-center justify-center text-slate-700"
