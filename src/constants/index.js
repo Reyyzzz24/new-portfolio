@@ -243,7 +243,7 @@ export const mySocials = [
   },
   {
     name: "Linkedin",
-    href: "https://www.linkedin.com/in/reva-yulian-satria/",
+    href: "https://www.linkedin.com/in/reva-yulian-satria-74114930b/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
