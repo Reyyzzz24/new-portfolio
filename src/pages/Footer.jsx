@@ -7,7 +7,6 @@ const Footer = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 text-sm text-neutral-400">
 
-                {/* Kolom 1: Kiri */}
                 <p className="text-center md:text-left">© 2026 Reva Yulian Satria. All rights reserved.</p>
 
                 <div className="flex justify-center gap-4">
@@ -17,11 +16,23 @@ const Footer = () => {
                 </div>
 
                 <div className="flex justify-center md:justify-end gap-4">
-                    {mySocials.map((social, index) => (
-                        <a href={social.href} key={index} className="hover:opacity-80 transition-opacity">
-                            <img src={social.icon} className="w-5 h-5" alt={social.name} />
-                        </a>
-                    ))}
+                    {mySocials.map((social, index) => {
+                        const href = social.name === "WhatsApp"
+                            ? `https://wa.me/${social.href}`
+                            : social.href;
+
+                        return (
+                            <a
+                                href={href}
+                                key={index}
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="hover:opacity-80 transition-opacity"
+                            >
+                                <img src={social.icon} className="w-5 h-5" alt={social.name} />
+                            </a>
+                        );
+                    })}
                 </div>
             </div>
         </section>
