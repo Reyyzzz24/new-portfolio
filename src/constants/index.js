@@ -189,7 +189,7 @@ export const myProjects = [
       {
         id: 1,
         name: "Next.js",
-        path: "/assets/logos/nextjs.png",
+        path: "/assets/logos/nextjs-icon.webp",
       },
       {
         id: 2,
