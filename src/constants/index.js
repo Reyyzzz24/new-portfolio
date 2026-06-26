@@ -170,6 +170,44 @@ export const myProjects = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Client Portfolio CMS",
+    description:
+      "A customizable portfolio website platform that enables multiple clients to manage and personalize their own portfolio content through a dedicated admin dashboard.",
+    subDescription: [
+      "Developed a modern portfolio platform using Next.js and React, delivering fast performance through server-side rendering and optimized routing.",
+      "Integrated Supabase as the backend service to provide secure authentication, real-time database management, and scalable content storage.",
+      "Built a comprehensive admin dashboard that allows clients to customize portfolio sections including Hero, About, Services, Projects, Experience, Skills, Contact, and Social Links without modifying the source code.",
+      "Designed a fully responsive and visually consistent user interface with Tailwind CSS, ensuring an optimal experience across desktop, tablet, and mobile devices.",
+      "Implemented role-based authentication and protected admin routes, enabling each client to securely manage only their own portfolio data.",
+    ],
+    href: "https://gherryanwashesyasyagara.vercel.app/",
+    logo: "",
+    image: "/assets/projects/client-portfolio.png",
+    tags: [
+      {
+        id: 1,
+        name: "Next.js",
+        path: "/assets/logos/nextjs.png",
+      },
+      {
+        id: 2,
+        name: "React",
+        path: "/assets/logos/react.svg",
+      },
+      {
+        id: 3,
+        name: "Supabase",
+        path: "/assets/logos/supabase.png",
+      },
+      {
+        id: 4,
+        name: "TailwindCSS",
+        path: "/assets/logos/tailwindcss.svg",
+      },
+    ],
+  },
 ];
 
 export const myCertificates = [
