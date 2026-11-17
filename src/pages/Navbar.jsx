@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
     const navbarItems = [
         "Home", "About", "Experience", "Projects", "Skills", "Certificates", "Contact",
@@ -15,6 +16,11 @@ const Navbar = () => {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+    };
+
+    const openPreview = () => {
+        setIsOpen(false);
+        setIsPreviewOpen(true);
     };
 
     return (
@@ -42,8 +48,8 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex justify-end">
-                    <button 
-                        onClick={handleDownload}
+                    <button
+                        onClick={openPreview}
                         className="px-5 py-2 rounded-full bg-cyan-950 text-white text-sm hover:opacity-90 transition"
                     >
                         Download CV
@@ -77,14 +83,56 @@ const Navbar = () => {
                         ))}
                     </ul>
 
-                    <button 
-                        onClick={handleDownload}
+                    <button
+                        onClick={openPreview}
                         className="w-full mt-8 py-3.5 rounded-2xl bg-cyan-950 text-white text-sm font-semibold hover:bg-cyan-900 transition-colors"
                     >
                         Download CV
                     </button>
                 </div>
             </div>
+
+            {isPreviewOpen && (
+                <div className="fixed inset-0 z-[60] flex items-center justify-center p-4 backdrop-blur-md bg-black/30">
+                    <div className="relative w-full max-w-3xl bg-white border border-gray-200 shadow-2xl rounded-3xl flex flex-col max-h-[90vh] overflow-hidden">
+                        <div className="flex items-center justify-between p-5 border-b border-gray-100 shrink-0">
+                            <h3 className="text-lg font-semibold text-gray-900">CV Preview</h3>
+                            <button
+                                onClick={() => setIsPreviewOpen(false)}
+                                className="p-2 transition-colors rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-900"
+                                aria-label="Close preview"
+                            >
+                                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div className="flex-1 min-h-0 bg-gray-100">
+                            <iframe
+                                src="/assets/resume/resume.pdf#toolbar=0"
+                                title="CV Preview"
+                                className="w-full h-full"
+                            />
+                        </div>
+
+                        <div className="flex items-center justify-end gap-3 p-5 border-t border-gray-100 shrink-0">
+                            <button
+                                onClick={() => setIsPreviewOpen(false)}
+                                className="px-5 py-2 rounded-full text-sm text-gray-600 hover:text-gray-900 transition"
+                            >
+                                Cancel
+                            </button>
+                            <button
+                                onClick={handleDownload}
+                                className="px-5 py-2 rounded-full bg-cyan-950 text-white text-sm hover:opacity-90 transition"
+                            >
+                                Download PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     );
 };
