@@ -14,7 +14,7 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
     return (
         <div className="md:hidden relative w-full h-screen overflow-hidden flex flex-col pt-10">
             <p className="text-[10px] uppercase tracking-[0.3em] text-cyan-700/60 font-semibold text-center">
-                Software Engineer & Creative
+                Fullstack Software Engineer
             </p>
 
             <div className="absolute top-20 w-full flex flex-col items-center z-20 pointer-events-none">
@@ -47,17 +47,17 @@ const HeroMobile = ({ xTop, xBottom, yImage, yBadge }) => {
                         custom={{ rotate: -5, delay: 0.1 }}
                         variants={badgeVariants} initial="hidden" animate="visible"
                         className="bg-white border border-slate-200 text-slate-800 px-3 py-1 rounded-full text-[10px] shadow-sm"
-                    >Data Analyst</motion.span>
+                    >Fullstack Engineer</motion.span>
                     <motion.span
                         custom={{ rotate: 3, delay: 0.2 }}
                         variants={badgeVariants} initial="hidden" animate="visible"
                         className="bg-white border border-slate-200 text-slate-800 px-3 py-1 rounded-full text-[10px] shadow-sm"
-                    >Video Editing</motion.span>
+                    >Self-Hosted Systems</motion.span>
                     <motion.span
                         custom={{ rotate: -2, delay: 0.3 }}
                         variants={badgeVariants} initial="hidden" animate="visible"
                         className="bg-white border border-slate-200 text-slate-800 px-3 py-1 rounded-full text-[10px] shadow-sm"
-                    >Fullstack Dev</motion.span>
+                    >Go & Laravel</motion.span>
                 </motion.div>
 
                 <div className="w-215">

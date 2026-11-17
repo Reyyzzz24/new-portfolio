@@ -68,14 +68,16 @@ export const Timeline = ({ data }) => {
 
                 <div className="hidden md:flex flex-col gap-2 pl-12">
                   <h3 className="text-xl font-medium text-cyan-950">{item.date}</h3>
-                  <h4 className="text-xl font-bold text-gray-800">{item.job}</h4>
+                  <h4 className="text-xl font-bold text-gray-800">{item.title}</h4>
+                  <p className="text-sm font-medium text-gray-500">{item.job}</p>
                 </div>
               </div>
 
               <div className="relative w-full pl-12 pr-4 md:pl-0">
                 <div className="block mb-4 md:hidden">
                   <h3 className="text-xl font-medium text-cyan-950">{item.date}</h3>
-                  <h4 className="text-xl font-bold text-gray-800">{item.job}</h4>
+                  <h4 className="text-xl font-bold text-gray-800">{item.title}</h4>
+                  <p className="text-sm font-medium text-gray-500">{item.job}</p>
                 </div>
 
                 <div className="w-full">

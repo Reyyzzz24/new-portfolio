@@ -84,22 +84,21 @@ const About = () => {
 
                             <div className="space-y-6">
                                 <AnimatedParagraph>
-                                    I am a passionate Fullstack Developer and Machine Learning enthusiast based in Bogor,
-                                    driven by the mission to build intelligent, high-performance digital systems.
-                                    I specialize in bridging the gap between robust backend engineering and intuitive
-                                    frontend interfaces.
+                                    I am a Fullstack Software Engineer based in Bogor who builds production web and
+                                    mobile systems end to end, from database design and REST APIs to containerized
+                                    deployment, using Go, Laravel, Next.js, and React Native.
                                 </AnimatedParagraph>
                                 <AnimatedParagraph>
-                                    My technical approach integrates Machine Learning to create data-driven solutions
-                                    that address complex real-world challenges. Whether it's optimizing system
-                                    architecture or implementing predictive models, I focus on delivering scalable
-                                    and efficient results.
+                                    At Eprisi, I build self-hosted collaboration platforms for enterprise and
+                                    government clients, integrating Keycloak SSO, Nextcloud, and Rocket.Chat, and
+                                    shipping them with Docker, Dokploy, and GitLab CI/CD. I enjoy designing wrapper
+                                    architectures that let core platforms stay upgradeable without breaking custom
+                                    branding.
                                 </AnimatedParagraph>
                                 <AnimatedParagraph>
-                                    Beyond the code, I am a dedicated Video Editor. This creative edge allows me to
-                                    bring a cinematic level of detail to my projects, ensuring that every user
-                                    experience is not just functional, but also visually compelling and narratively
-                                    engaging.
+                                    Beyond that, I have hands-on experience with payment gateways, network automation,
+                                    and mobile attendance systems. I am adaptable, results-oriented, and ready to
+                                    contribute to local and global remote teams.
                                 </AnimatedParagraph>
                             </div>
                         </div>

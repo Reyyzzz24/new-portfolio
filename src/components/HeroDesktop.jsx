@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
   <div className="hidden md:flex relative flex-1 flex-col items-center justify-center pb-20">
     <p className="text-[10px] uppercase tracking-[0.3em] text-cyan-700/60 font-semibold">
-      Software Engineer & Creative
+      Fullstack Software Engineer
     </p>
 
     <h1 className="w-full text-[12vw] font-bold tracking-tighter leading-[0.9] text-cyan-950 uppercase mt-4 overflow-hidden">
@@ -53,9 +53,9 @@ const HeroDesktop = ({ xTop, xBottom, yImage, yBadge }) => (
       className="absolute top-[90%] flex gap-4 z-20"
     >
       {[
-        { text: "Data Analyst", rotate: "-6deg" },
-        { text: "Video Editing", rotate: "3deg" },
-        { text: "Fullstack Developer", rotate: "5deg" },
+        { text: "Fullstack Engineer", rotate: "-6deg" },
+        { text: "Self-Hosted Systems", rotate: "3deg" },
+        { text: "Go & Laravel", rotate: "5deg" },
       ].map((item) => (
         <motion.div
           key={item.text}

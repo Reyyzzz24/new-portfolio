@@ -1,5 +1,120 @@
 export const myProjects = [
   {
+    id: 7,
+    title: "Eprisi Account (SSO)",
+    description:
+      "A centralized single sign-on portal for the entire Eprisi Workspace suite, built on an unmodified Keycloak engine with a fully custom login experience and branding.",
+    subDescription: [
+      "Split the SSO stack into an unmodified upstream Keycloak engine plus separately deployable theme, SPI, and portal apps, mounted into the engine via an init-container instead of a custom-baked image.",
+      "Built a Keycloakify login theme and a Next.js account-portal BFF, sharing a design-system package across both so Keycloak itself stays upgradeable without losing the custom branding.",
+      "Extended Keycloak with a custom Java SPI to support admin-approved user registration with real-time Telegram alerts.",
+    ],
+    href: "https://auth.eprisi.com",
+    logo: "",
+    image: "/assets/projects/eprisi-account.png",
+    tags: [
+      { id: 1, name: "Keycloak", path: "/assets/logos/keycloak.svg" },
+      { id: 2, name: "Next.js", path: "/assets/logos/nextjs-icon.webp" },
+      { id: 3, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+    ],
+  },
+  {
+    id: 8,
+    title: "Eprisi Chat",
+    description:
+      "A Next.js wrapper frontend that delivers a fully rebranded chat experience on top of an unmodified Rocket.Chat backend, as part of the Eprisi Workspace suite.",
+    subDescription: [
+      "Built a Next.js 15 wrapper frontend for an unmodified Rocket.Chat image, using an allowlisted BFF route to proxy REST calls and inject session tokens server-side.",
+      "Implemented a short-lived, memory-only DDP connection for realtime subscriptions, following Rocket.Chat's own guidance to use REST for mutating actions.",
+      "Replaced an earlier forked/restyled Rocket.Chat approach with this wrapper pattern, so upstream Rocket.Chat upgrades no longer risk breaking the custom UI.",
+    ],
+    href: "https://chat.eprisi.com",
+    logo: "",
+    image: "/assets/projects/eprisi-chat.png",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/logos/nextjs-icon.webp" },
+      { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 3, name: "Rocket.Chat", path: "/assets/logos/rocketdotchat.svg" },
+    ],
+  },
+  {
+    id: 9,
+    title: "Eprisi Chat Mobile (Rocket.Chat React Native)",
+    description:
+      "A fully redesigned and rebranded mobile client for Eprisi Chat, forked from the open-source Rocket.Chat React Native app.",
+    subDescription: [
+      "Forked the open-source Rocket.Chat React Native app and redesigned/rebranded its entire UI to match Eprisi Chat's product mockups, reaching close to pixel-perfect (~99%) visual fidelity.",
+      "Evaluated mockup features that were not technically feasible on the upstream codebase and proposed alternative UX solutions to keep the redesign on track.",
+      "Connects to a self-hosted Rocket.Chat server behind Keycloak SSO (Eprisi Account) via the Rocket.Chat REST & Realtime API.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/eprisi-chat-mobile.png",
+    tags: [
+      { id: 1, name: "React Native", path: "/assets/logos/react.svg" },
+      { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 3, name: "Redux", path: "/assets/logos/redux.svg" },
+    ],
+  },
+  {
+    id: 10,
+    title: "Eprisi Cloud",
+    description:
+      "A Next.js wrapper UI for Eprisi's self-hosted cloud storage platform, talking to an unmodified Nextcloud instance server-side.",
+    subDescription: [
+      "Built a Next.js wrapper UI on its own domain that talks to an unmodified Nextcloud instance server-side via WebDAV/OCS.",
+      "Implemented both local-password and direct Keycloak OIDC login, giving SSO users bearer-token WebDAV access with no app password required.",
+      "Diagnosed and fixed a production bug where Docker's embedded DNS round-robined a shared service hostname between two unrelated Nextcloud projects.",
+    ],
+    href: "https://eprisi-drive.eprisi.com",
+    logo: "",
+    image: "/assets/projects/eprisi-cloud.png",
+    tags: [
+      { id: 1, name: "Next.js", path: "/assets/logos/nextjs-icon.webp" },
+      { id: 2, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 3, name: "Nextcloud", path: "/assets/logos/nextcloud.svg" },
+    ],
+  },
+  {
+    id: 11,
+    title: "Eprisi Cloud Desktop (Sync Client)",
+    description:
+      "A cross-platform desktop sync client for Eprisi Cloud, built with Tauri for a lightweight native footprint on both macOS and Windows.",
+    subDescription: [
+      "Building a cross-platform (macOS & Windows) desktop sync client for Eprisi Cloud, syncing with its web and mobile apps.",
+      "Implemented a custom login screen with Keycloak SSO via OIDC redirect on top of the Nextcloud WebDAV/OCS API.",
+      "Matched the UI to the Eprisi Cloud web app for a consistent experience across the whole suite. Currently in active development, pre-release.",
+    ],
+    href: "",
+    logo: "",
+    image: "/assets/projects/eprisi-cloud-desktop.png",
+    tags: [
+      { id: 1, name: "Tauri", path: "/assets/logos/tauri.svg" },
+      { id: 2, name: "Rust", path: "/assets/logos/rust.svg" },
+      { id: 3, name: "React", path: "/assets/logos/react.svg" },
+    ],
+  },
+  {
+    id: 12,
+    title: "Internet Mandiri — ISP Billing, Marketplace & Village Tourism",
+    description:
+      "A unified platform for PT PC24 combining ISP subscriber billing, a local marketplace, and a village-tourism ticketing module.",
+    subDescription: [
+      "Built a Laravel + Inertia.js + React/TypeScript platform combining ISP subscriber billing, a local marketplace with seller ratings/reviews, and a village-tourism ticketing module with QR-code scanning.",
+      "Integrated Midtrans for online payments and the MikroTik RouterOS API for PPPoE monitoring and remote internet on/off control.",
+      "Implemented RBAC with audit logging across superadmin, admin, owner, and member roles, deployed to production.",
+    ],
+    href: "https://ciawi.pc24.net.id",
+    logo: "",
+    image: "/assets/projects/internet-mandiri.png",
+    tags: [
+      { id: 1, name: "Laravel", path: "/assets/logos/laravel.png" },
+      { id: 2, name: "React", path: "/assets/logos/react.svg" },
+      { id: 3, name: "TypeScript", path: "/assets/logos/typescript.svg" },
+      { id: 4, name: "MySQL", path: "/assets/logos/mysql.png" },
+    ],
+  },
+  {
     id: 1,
     title: "SIADLAB (Laboratory & Administration Information System)",
     description:
@@ -292,6 +407,25 @@ export const mySocials = [
 ];
 
 export const experiences = [
+  {
+    title: "Fullstack Programmer",
+    job: "PT Epsilon Prisma Sinergi (Eprisi)",
+    date: "July 2026 - Present",
+    contents: [
+      "Building Eprisi Workspace, a self-hosted Google Workspace alternative for enterprise and government clients, unifying Eprisi Account (Keycloak), Eprisi Cloud (Nextcloud + Collabora), and Eprisi Chat (Rocket.Chat) behind a single login.",
+      "Implementing single sign-on across the suite with a Keycloak realm and a custom Java SPI for admin-approved registration, and designing a wrapper architecture so core platforms can be upgraded without breaking customizations.",
+      "Containerizing and deploying the stack with Docker and Dokploy behind Traefik and Cloudflare, with automated build-and-deploy pipelines on self-hosted GitLab CI/CD.",
+    ],
+  },
+  {
+    title: "Freelance Fullstack Developer",
+    job: "Self-employed",
+    date: "March 2026 - Present",
+    contents: [
+      "PT PC24 - Internet Desa Mandiri: Building an ISP management platform with automated billing, a local marketplace, and village-tourism modules, integrating Midtrans payments and the MikroTik API for network automation.",
+      "SMK Kesehatan Moestopo - SIMPEG: Building an HR information system with face-recognition and QR-code attendance plus automated payroll and overtime calculation.",
+    ],
+  },
   {
     title: "Data Entry Operator",
     job: "IIMI Image Management Pvt. Ltd.",
